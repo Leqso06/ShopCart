@@ -1,145 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biography of Albert Einstein</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-        text-align: center;
-        background-color: black;
-        }
-
-        h1 {
-        color: white;
-        font-family: "Andada Pro", serif;
-        }
-
-        p {
-        color: white;
-        font-family: "Andada Pro", serif;
-        }
-
-        .picture {
-        background-image: linear-gradient(
-            to right,
-            rgb(45, 52, 54),
-            rgb(178, 190, 195)
-        );
-        padding: 25px;
-        border-radius: 30px;
-        margin-right: 180px;
-        margin-left: 180px;
-        }
-
-        #img {
-        margin: 0px 10px 10px 10px;
-        width: 510px;
-        height: auto;
-        border-radius: 54px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        #knownFor {
-        color: black;
-        margin-bottom: 0px;
-        margin-top: 9px;
-        }
-
-        h4 {
-        margin: 40px;
-        color: white;
-        }
-
-        ul {
-        color: white;
-        text-align: start;
-        margin-inline: 255px;
-        font-family: "Andada Pro", serif;
-        }
-
-        #quote {
-        border: 1px solid rgba(253, 254, 255, 0.5);
-        margin: 75px;
-        font-size: 20px;
-        padding: 21px;
-        border-radius: 15px;
-        }
-
-        #author {
-        margin-top: 0px;
-        display: inline-block;
-        font-size: 15px;
-        padding-bottom: 4px;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <header >
-        <h1>Albert Einstein</h1>
-    </header>
-    <p>German mathematician and physicist who developed the special and general theories of relativity.</p>
+  <script>
+// 1.
+    console.log("1. შექმენით ცვლადები, სადაც ჩაწერთ თქვენს სახელს, გვარს, ასაკს და კონსოლში გამოიტანეთ ერთ სტრინგად." + "\n" + "Result:")
+    var name = "Leqso";
+    var lastname = "Varamashvili";
+    var age = 15;
+    var result = name + " " + lastname + " " + age;
+    console.log(result + "\n\n");
 
-    <div class="picture">
-        <img id="img" src="https://photoquotes.com/storage/Albert-Einstein.jpg">
-        <p id="knownFor"> <i> Albert Einstein is known for devising his theory of relativity, which revolutionized 
-            our understanding of space, time, gravity, and the universe.</i> </p>
-    </div>
+// 2.
+    console.log("2. აიღეთ ორი ცვლადი, დაითვალეთ მათ შორის სხვაობა, თუ სხვაობა ნაკლები იქნება პირველი ცვლადის მნიშვნელობაზე კონსოლში დაბეჭდეთ სხვაობა, სხვა შემთხვევაში დაბეჭდეთ პირველი ცვლადის მნიშვნელობა" + "\n" + "Result:")
+    var a = 6;
+    var b = 5;
+    if((a-b)<a){
+      console.log(a-b + " (დაიბეჭდა სხვაობა)" + "\n\n")
+    } else {
+      console.log(a + " (დაიბეჭდა პირველი ცვლადის მნიშვნელობა)" + "\n\n")
+    }
 
-    <h4>Here is a timeline of Albert Einstein's life (Part 1):</h4>
+// 3.
+    console.log("3. აიღეთ ორი რიცხვითი ცვლადი, დაითვალეთ ნაშთი.- თუ ნაშთი ტოლია 0-ის კონსოლში დაბეჭდეთ რომ იყოფა უნაშთოდ. - თუ ნაშთი მოთავსებულია 0-სა და 5ს შორის კონსოლში გამოიტანეთ მიღებული ნაშთი- თუ ნაშთი მეტია 5-ზე კონსოლში გამოიტანეთ განაყოფი." + "\n" + "Result:")
+    var c = 10;
+    var d = 3;
+    var modulus = c % d;
+    var division = c / d;
+    if (modulus == 0){
+      console.log(c + " და " + d + " იყოფა უნაშთოდ." + "\n\n");
+    } else if (modulus >= 0 && modulus <= 5) {
+      console.log("მიღებული ნაშთი: " + modulus + "\n\n")
+    } else if (modulus > 5) {
+      console.log("განაყოფი: " + division + "\n\n")
+    }
 
-    <ul>
-        <li><b>1879</b> - (March 14) Born in Ulm, Germany, to Hermann Einstein (1847-1902) and Pauline Koch (1858-1920).</li>
-        <br>
-        <li><b>1880</b> - Einsteins move to Munich.</li>
-        <br>
-        <li><b>1881</b> - Sister Maja (Maria) born (d. 1951).</li>
-        <br>
-        <li><b>1888</b> -  Enters Luitpold school in Munich.</li>
-        <br>
-        <li><b>1894</b> - Family moves to Italy, Albert stays at Luitpold.</li>
-        <br>
-        <li><b>1895</b> - Rejoins family in Pavia, then goes to cantonal school in Aarau, Switzerland.</li>
-        <br>
-        <li><b>1896</b> - Renounces German citizenship. Gets diploma from Aarau, enrolls at ETH (Federal Institute of Technology) in Zurich.</li>
-        <br>
-        <li><b>1900</b> - Gets diploma from ETH.</li>
-        <br>
-        <li><b>1901</b> - Becomes Swiss citizen.</li>
-        <br>
-        <li><b>1902</b> - Employed at patent office, Bern.</li>
-        <br>
-        <li><b>1903</b> - Marries Mileva Maric (1875-1948). They have two sons, Hans Albert (1904-1973), who became a successful hydraulic engineer, and Eduard (1910-1965), who fell prey to incurable schizophrenia. A daughter (1902-?) was born before the marriage and apparently put up for adoption--her fate is unknown.</li>
-        <br>
-        <li><b>1905</b> - Publishes in the Annalen der Physik:
-            -Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristishen Gesichtspunkt, on the quantum of light and the photo-electric effect.
-            -Die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen, on Brownian motion of particles and atomic theory.
-            -Elektrodynamic bewegter Körper, the special theory of relativity.
-            -Ist die Trägheit eines Körpers von seinem Energieeinhalt abhängig?, equivalence of mass and energy.</li>
-        <br>
-        <li><b>1907</b> - Planckshe Theorie der Strahlung und die Theorie der spezifische Wärme, quantum theory for solids (specific heats).
-            -Relativitätsprinzip und die aus demselben gezogenen Folgerungen, the principle of general relativity--gravitation is equivalent to acceleration.
-            1909 Becomes associate professor at University of Zurich.
-            Further work on quantum theory.</li>
-        <br>
-        <li><b>1909</b> - Becomes associate professor at University of Zurich.
-            Further work on quantum theory.</li>
-        <br>
-        <li><b>1911</b> - Becomes full professor at Karl-Ferdinand University in Prague.
-            Predicts bending of starlight at eclipses (but gets the magnitude wrong).</li>
-    </ul>
+// 4.
+    console.log("4. ცვლადში რომელშიც მინიჭებული გაქვთ თქვენი სახელი, გაიგეთ რომელ პოზიციაზე მდებარეობს “a” სიმბოლო. - თუ მსგავსი სიბოლო არ არსებობს თქვენს სახელში კონსოლში დაბეჭდეთ „ცვლადი არ მოიძებნა“, თუარა და დაბეჭდეთ ეს პოზიცია." + "\n" + "Result:")
+    if (name.indexOf("a") == -1) {
+      console.log("ცვლადი არ მოიძებნა." + "\n\n")
+    } else {
+      console.log(name.indexOf("a") + "\n\n");
+    }
 
-    <p id="quote">"Everyone is a Genius. <br>
-    But if you judge a fish on its ability to climb a tree, it will live 
-    its whole life believing that it is stupid"
-    <br> <br>
-    - Albert Einstein -</p>
+// 5.
+    console.log("5. აიღეთ ცვლადი, რომელსაც მიანიჭებთ ოთხ სიტყვიან წინადადებას. - დაითვალეთ სიგრძე ამ წინადადების. - თუ წინადადების სიგრძე ნაკლებია 5-ზე, კონსოლში დაბეჭდეთ  წიანდადების მნიშვნელობა მე4 ასოდან.- თუ წინადადების სიგრძე მეტია 5-ზე და ნაკლებია 15-ზე, კონსოლში დაბეჭდეთ წინადადების მე6 პოზიციიდან მე11 პოზიციამდე მნიშვნელობა- თუ წინადადების სიგრძე მეტია 15ზე დაბეჭდეთ ბოლო 5 ასობგერა."  + "\n" + "Result:")
+    var str = "Just drink more coffee"
+    if (str.length < 5) {
+      console.log(str.slice(4) + "\n\n")
+    } else if (str.length > 5 && str.length < 15){
+      console.log(str.slice(6,11) + "\n\n")
+    } else if (str.length > 15) {
+      console.log(str.slice(-5) + "\n\n")
+    }
 
-    <p id="author">Built by <a href="https://www.facebook.com/leqso2006">Leqso Varamashvili</a></p>
+// 6.
+    console.log("6. Var str  = “this is a classroom”; ამ ცვლადიდან დაბეჭდეთ მე-3 პოზიციიდან 5 ასო."  + "\n" + "Result:")
+    var str1 = "this is a classroom";
+    console.log(str1.substr(3, 5) + "\n\n")
+
+// 7.
+    console.log("7. var str = “My name is x”; x ცვლადი ჩაანაცვლეთ თქვენი სახელით და დაბეჭდეთ კონსოლში."  + "\n" + "Result:")
+    var str2 = "My name is " + name;
+    console.log(str2.replace(str2, name) + "\n\n");
+
+// 8.
+    console.log("8. აიღეთ ცვლადი, მიანიჭეთ თქვენი სახელი და გვარი, - გადაიყვანეთ ეს მნიშვნელობა მაღალ რეგისრტის ასოებში და დაბეჭდეთ კონსოლში. - გადაიყვანეთ ეს მნიშვნელობა დაბალ რეგისრის ასეობში და დაბეჭდეთ კონსოლში"  + "\n" + "Result:")
+    var username = name + " " + lastname;
+    console.log(username.toUpperCase());
+    console.log(username.toLowerCase() + "\n\n");
+
+// 9.
+    console.log("9. Var str = “banana, apple, kiwi” - დაყავით წინადადება მძიმეებით."  + "\n" + "Result:")
+    var str3 = "banana, apple, kiwi"
+    console.log(str3.split(",") + "\n\n")
+  
+// 10.
+    console.log("10. DNA შედგება G, C, A,  T  - ATCG RNA -ში A ნაცვლდება U-თი , ანუ შედეგია  AUCG"  + "\n" + "Result:")
+    console.log("ამას ვერ მივხვდი :დ")
+  </script>
 </body>
 </html>
