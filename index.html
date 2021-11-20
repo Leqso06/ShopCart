@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  color: #dcdde1;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/3980364/pexels-photo-3980364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  width: 100%;
+  height: 100%;
+  background-position-y: -138px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 122px;
+}
+
+.main-content {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  margin: 0% 25%;
+  color: black;
+}
+
+header h1 {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: none;
+}
+
+.main-content h1 {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+}
+
+.main-content p {
+  margin: 30px 0px 28px 0px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 22px;
+}
+
+.main-content button {
+  padding: 20px 40px;
+  background-color: #dcdde1;
+  color: black;
+  border-radius: 57px;
+}
+
+    </style>
 </head>
 <body>
-  <script>
-// 1.
-    console.log("1. შექმენით ცვლადები, სადაც ჩაწერთ თქვენს სახელს, გვარს, ასაკს და კონსოლში გამოიტანეთ ერთ სტრინგად." + "\n" + "Result:")
-    var name = "Leqso";
-    var lastname = "Varamashvili";
-    var age = 15;
-    var result = name + " " + lastname + " " + age;
-    console.log(result + "\n\n");
+    <header>
+        <h1 class="logo">Landings</h1>
+        <div class="buttons">
+            <button>WORK</button>
+            <button>FEATURES</button>
+            <button>BLOG</button>
+            <button>CONTACT US</button>
+        </div>
+    </header>
 
-// 2.
-    console.log("2. აიღეთ ორი ცვლადი, დაითვალეთ მათ შორის სხვაობა, თუ სხვაობა ნაკლები იქნება პირველი ცვლადის მნიშვნელობაზე კონსოლში დაბეჭდეთ სხვაობა, სხვა შემთხვევაში დაბეჭდეთ პირველი ცვლადის მნიშვნელობა" + "\n" + "Result:")
-    var a = 6;
-    var b = 5;
-    if((a-b)<a){
-      console.log(a-b + " (დაიბეჭდა სხვაობა)" + "\n\n")
-    } else {
-      console.log(a + " (დაიბეჭდა პირველი ცვლადის მნიშვნელობა)" + "\n\n")
-    }
-
-// 3.
-    console.log("3. აიღეთ ორი რიცხვითი ცვლადი, დაითვალეთ ნაშთი.- თუ ნაშთი ტოლია 0-ის კონსოლში დაბეჭდეთ რომ იყოფა უნაშთოდ. - თუ ნაშთი მოთავსებულია 0-სა და 5ს შორის კონსოლში გამოიტანეთ მიღებული ნაშთი- თუ ნაშთი მეტია 5-ზე კონსოლში გამოიტანეთ განაყოფი." + "\n" + "Result:")
-    var c = 10;
-    var d = 3;
-    var modulus = c % d;
-    var division = c / d;
-    if (modulus == 0){
-      console.log(c + " და " + d + " იყოფა უნაშთოდ." + "\n\n");
-    } else if (modulus >= 0 && modulus <= 5) {
-      console.log("მიღებული ნაშთი: " + modulus + "\n\n")
-    } else if (modulus > 5) {
-      console.log("განაყოფი: " + division + "\n\n")
-    }
-
-// 4.
-    console.log("4. ცვლადში რომელშიც მინიჭებული გაქვთ თქვენი სახელი, გაიგეთ რომელ პოზიციაზე მდებარეობს “a” სიმბოლო. - თუ მსგავსი სიბოლო არ არსებობს თქვენს სახელში კონსოლში დაბეჭდეთ „ცვლადი არ მოიძებნა“, თუარა და დაბეჭდეთ ეს პოზიცია." + "\n" + "Result:")
-    if (name.indexOf("a") == -1) {
-      console.log("ცვლადი არ მოიძებნა." + "\n\n")
-    } else {
-      console.log(name.indexOf("a") + "\n\n");
-    }
-
-// 5.
-    console.log("5. აიღეთ ცვლადი, რომელსაც მიანიჭებთ ოთხ სიტყვიან წინადადებას. - დაითვალეთ სიგრძე ამ წინადადების. - თუ წინადადების სიგრძე ნაკლებია 5-ზე, კონსოლში დაბეჭდეთ  წიანდადების მნიშვნელობა მე4 ასოდან.- თუ წინადადების სიგრძე მეტია 5-ზე და ნაკლებია 15-ზე, კონსოლში დაბეჭდეთ წინადადების მე6 პოზიციიდან მე11 პოზიციამდე მნიშვნელობა- თუ წინადადების სიგრძე მეტია 15ზე დაბეჭდეთ ბოლო 5 ასობგერა."  + "\n" + "Result:")
-    var str = "Just drink more coffee"
-    if (str.length < 5) {
-      console.log(str.slice(4) + "\n\n")
-    } else if (str.length > 5 && str.length < 15){
-      console.log(str.slice(6,11) + "\n\n")
-    } else if (str.length > 15) {
-      console.log(str.slice(-5) + "\n\n")
-    }
-
-// 6.
-    console.log("6. Var str  = “this is a classroom”; ამ ცვლადიდან დაბეჭდეთ მე-3 პოზიციიდან 5 ასო."  + "\n" + "Result:")
-    var str1 = "this is a classroom";
-    console.log(str1.substr(3, 5) + "\n\n")
-
-// 7.
-    console.log("7. var str = “My name is x”; x ცვლადი ჩაანაცვლეთ თქვენი სახელით და დაბეჭდეთ კონსოლში."  + "\n" + "Result:")
-    var str2 = "My name is " + name;
-    console.log(str2.replace(str2, name) + "\n\n");
-
-// 8.
-    console.log("8. აიღეთ ცვლადი, მიანიჭეთ თქვენი სახელი და გვარი, - გადაიყვანეთ ეს მნიშვნელობა მაღალ რეგისრტის ასოებში და დაბეჭდეთ კონსოლში. - გადაიყვანეთ ეს მნიშვნელობა დაბალ რეგისრის ასეობში და დაბეჭდეთ კონსოლში"  + "\n" + "Result:")
-    var username = name + " " + lastname;
-    console.log(username.toUpperCase());
-    console.log(username.toLowerCase() + "\n\n");
-
-// 9.
-    console.log("9. Var str = “banana, apple, kiwi” - დაყავით წინადადება მძიმეებით."  + "\n" + "Result:")
-    var str3 = "banana, apple, kiwi"
-    console.log(str3.split(",") + "\n\n")
-  
-// 10.
-    console.log("10. DNA შედგება G, C, A,  T  - ATCG RNA -ში A ნაცვლდება U-თი , ანუ შედეგია  AUCG"  + "\n" + "Result:")
-    console.log("ამას ვერ მივხვდი :დ")
-  </script>
+    <div class="main-content">
+        <h1>The city <br>where dreams <br>come true.</h1>
+        <p>Silence, Earthling! My Name Is Darth Vader.<br>I Am An Extraterrestrial From The Planet Vulcan!</p>
+        <button>VIEW OUR PROJECTS</button>
+    </div>
 </body>
 </html>
